@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Register User</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+ </head>
+<script>
+function register(){
+var ar=document.regform.area_of_cultivation.value;
+var ph=document.regform.phone.value;
+var p=document.regform.pass.value;
+var cp=document.regform.cpass.value;
+if (ph.length!=8)
+{alert("enter valid phone number");
+return false;}
+if (ar<0)
+{alert("enter valid area of cultivation");
+return false;}
+if (p==null||p==""||p.length<8)
+{alert("enter valid password");
+return false;}
+if (p.localeCompare(cp)!=0)
+{alert("confirm password must be same as password");
+return false;}}
+</script>
+ <body>
+<div class="login-box">
+ <h1 style="font-size:50px;position:left;color:white;">REGISTER</h1>
+<form name="regform" action="connect.jsp" onsubmit="return register()">
+<p>FIRST NAME :</p><input type="text" name="fname" placeholder="Enter First name" style="color:white" required>
+<p>LAST NAME :</p><input type="text" name="lname" placeholder="Enter Last name" style="color:white" required>
+<p>DATE OF BIRTH :</p><input type="date" name="dob" placeholder="DateOfBirth" style="color:white" required>
+<p>PHONE NUMBER:</p><input type="number" name="phone" placeholder="Phone no" style="color:white" required>
+<p>GENDER :</p><select id="gen" name="gender" style="color:white" required>
+  <option value="male" style="color:black">Male</option>
+  <option value="female" style="color:black">Female</option>
+  <option value="others" style="color:black">Others</option>
+</select>
+<pre>
+</pre>
+<p>AREA OF CULTIVATION:</p><input type="number" name="area_of_cultivation" placeholder="Area Of Cultivation" style="color:white" required>
+<p>PASSWORD :</p><input type="password" name="pass" placeholder="Password" style="color:white" required>
+<p>CONFIRM PASSWORD :</p><input type="password" name="cpass" placeholder="Confirm Password" style="color:white" required>
+<pre>
+</pre>
+<input type="submit" name="submit" value="Register">
+</form>
+</body>
+</html>

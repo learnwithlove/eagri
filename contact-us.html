@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Contact Us | E-Agriculture</title>
+<html>
+<head>
+<title>Home Page | E-Agriculture</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style>
+th, td {
+  padding: 40px;
+}
+</style>
+<script>
+function print(){
+document.getElementById("para").innerHTML="MESSAGE SUBMITTED";}
+</script>
+</head>
+<body>
+    <ul class="site-nav" style="backdrop-filter: blur(3px)">
+ <li><a href="home.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+<li><a href="index.html">LOG-Out</a></li><pre>   </pre>
+    </ul>
+ <pre>
+
+
+
+
+</pre>
+<table class="tbl" style="text-color:white;backdrop-filter: blur(2px);font-size:20px;"align="left" >
+<tr><td><a href="crop.html">CROP details</a></td></tr>
+<tr><td><a href="ware.html">WAREHOUSE</a></td></tr>
+<tr><td><a href="market.html">MARKET</a></td></tr>
+<tr><td><a href="loan.html">LOAN</a></td></tr>
+<tr><td><a href="expert.html">CONTACT EXPERT</a></td></tr>
+<tr><td><a href="info.html">PRESONAL info</a></td></tr>
+</table>
+<table align="center">
+  <tr><td style="backdrop-filter: blur(4px)"> <h2>Contact Us</h2>
+      <h3>Please enter the following details.</h3>
+      <form id="contacts-form" action="mail.php" method="POST">
+        <fieldset>
+        <div class="field">
+          <label>Name:</label>
+          <input type="text" name="from"style="background:transparent;">
+        </div><pre>
+
+</pre>
+        <div class="field">
+          <label>Phone Number:</label>
+          <input type="text" name="phone" style="background:transparent;">
+        </div><pre>
+
+</pre>
+        <div class="field">
+          <label>Subject:</label>
+          <input type="text" name="subject" style="background:transparent;">
+        </div><pre>
+
+</pre>
+        <div class="field">
+          <label>Your Message:</label>
+          <textarea cols="1" rows="1" name="body" style="background:transparent;"></textarea>
+        </div>
+        <div class="aligncenter" onclick="print()" style="text-decoration: none;padding: 5px 20px;border: 3px solid #fff;"> SEND MESSAGE</div>
+      </form>
+<p id="para" align="center" style="font-size:35px;"> </p>
+   </td></tr></table>
+</body>
+</html>
